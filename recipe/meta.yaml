@@ -1,4 +1,4 @@
-{% set version = '0.2-16' %}
+{% set version = "0.2-17" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/codetools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/codetools/codetools_{{ version }}.tar.gz
-  sha256: f67a66175cb5d8882457d1e9b91ea2f16813d554fa74f80c1fd6e17cf1877501
+  sha256: bfe9ef44593a6c47ea6975c652326c1ba728b761f930dad4dceb882f09c9ae7a
 
 build:
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -38,7 +38,7 @@ about:
   license: GPL
   summary: Code analysis tools for R.
   license_family: GPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
