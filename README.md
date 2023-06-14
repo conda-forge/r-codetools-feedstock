@@ -1,11 +1,11 @@
-About r-codetools
-=================
+About r-codetools-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-codetools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=codetools
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-codetools-feedstock/blob/main/LICENSE.txt)
 
 Summary: Code analysis tools for R.
 
