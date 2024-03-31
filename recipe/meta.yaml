@@ -1,4 +1,4 @@
-{% set version = "0.2-19" %}
+{% set version = "0.2-20" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/codetools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/codetools/codetools_{{ version }}.tar.gz
-  sha256: c4b7e567c87f33dad85de92f79641e5e5b5deede6d19a9dfa47133d191782dab
+  sha256: 3be6f375ec178723ddfd559d1e8e85bfeee04a5fbaf9f53f2f844e1669fea863
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
